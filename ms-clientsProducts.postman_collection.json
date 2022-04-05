@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "f8cabdca-b064-4290-aa07-e241788e219e",
+		"name": "ms-clientsProducts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListarClientesProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8008/api/clientesProductos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"clientesProductos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DatosGeneralClientesProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8778/api/clientesProductos/624b4541eaf59477884ba6f5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8778",
+					"path": [
+						"api",
+						"clientesProductos",
+						"624b4541eaf59477884ba6f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistrarClientesProductos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"clientes\": {\r\n            \"id\": \"624a8ab2eaf59451ac41b889\",\r\n            \"nombres\": \"Max Goldinnnnnnn\",\r\n            \"apellidos\": \"Tabarez C.\",\r\n            \"tipoCliente\": \"Empresarial\",\r\n            \"DNI\": \"99999999\"\r\n        },\r\n        \"productos\": {\r\n            \"id\": \"624aa794eaf59424181e3605\",\r\n            \"producto\": \"Pasivoooooo\",\r\n            \"tipoProducto\": \"Cuenta Corrienteoooo\",\r\n            \"comision\": \"1223\",\r\n            \"limiteMovimiento\": \"2\",\r\n            \"lineaCredito\": \"3500\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8778/api/clientesProductos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8778",
+					"path": [
+						"api",
+						"clientesProductos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarClientesProductos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"producto\": \"RRRRRRRRRRR\",\r\n    \"tipoProducto\": \"Cta corriente\",    \r\n    \"clientes\": {\r\n        \"id\": \"624a8ab2eaf59451ac41b889\",\r\n        \"nombres\": \"Max Goldin\",\r\n        \"apellidos\": \"Tabarez C.\",\r\n        \"tipoCliente\": \"Empresarial\",\r\n        \"DNI\": \"99999999\",\r\n        \"createAt\": null,\r\n        \"dni\": \"99999999\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8778/api/clientesProductos/624b3249eaf5947cc4496b4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8778",
+					"path": [
+						"api",
+						"clientesProductos",
+						"624b3249eaf5947cc4496b4c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarClientesProductos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8778/api/clientesProductos/624b3249eaf5947cc4496b4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8778",
+					"path": [
+						"api",
+						"clientesProductos",
+						"624b3249eaf5947cc4496b4c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

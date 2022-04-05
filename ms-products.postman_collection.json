@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "e0ae59c9-ed9a-4ce0-adad-cae4cad8c8e4",
+		"name": "ms-products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListarProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8008/api/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DatosGeneralProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8008/api/products/624bb4cf33429e2bf4d65946",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"products",
+						"624bb4cf33429e2bf4d65946"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistrarProductos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"producto\": \"Pasivo\",\r\n        \"tipoProducto\": \"Cuenta Corriente\",\r\n        \"comision\": \"1223\",\r\n        \"limiteMovimiento\": \"2\",\r\n        \"lineaCredito\": \"3500\"\r\n        \r\n        \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8008/api/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarProductos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"comision\": \"xxxx\",\r\n        \"limiteMovimiento\": \"56\",\r\n        \"lineaCredito\": \"3500\",\r\n        \"tipoProducto\": \"!!!!!\"\r\n        \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8008/api/products/624aa1ffeaf5940bcc31326e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"products",
+						"624aa1ffeaf5940bcc31326e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarProductos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8008/api/products/624bb4cf33429e2bf4d65946",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"api",
+						"products",
+						"624bb4cf33429e2bf4d65946"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
